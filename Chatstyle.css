@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+:root{
+    --grad:linear-gradient(to bottom right, #000000,#f30a8a);
+    --clip:polygon(100% 0, 100% 22%, 77% 100%, 0 23%, 0 0);
+    --shadow:0px 30px 60px -12px rgba(0, 0, 0, 0.68),0px 18px 36px -18px rgba(147,126,126,0.68);
+    --c:#eaeaea;
+    --g:#74d800;
+}@font-face{
+    src:url("q.ttf");
+    font-family: f;
+}
+.top{
+    height: 100vh;
+    background-image: var(--grad);
+    width: 100%;
+    clip-path:var(--clip);
+}
+.box{
+    width:1200px;
+    height: 650px;
+    border-radius: 5px;
+    box-shadow: var(--shadow);
+    position: absolute;
+    background: rgb(255, 255, 255) ;
+    top:50%;
+    left: 50%;
+    display: flex;
+    transform: translate(-50%, -50%);
+}
+.left{
+    width:300px;
+    height: 650px;
+    border-right:1px solid var(--c);
+}
+.right{
+    width: 900px;
+    height: 650px;
+    background-color: #615555;
+    border-radius:2px ;
+}
+.toop{
+    width: 300px;
+    height: 50px;
+    display: flex;
+    border-bottom: 1px solid var(--c);
+    justify-content: space-around;
+    align-items: center;
+}h2{
+    font-family:"Lucida Console" ;
+    font-weight: lighter;
+    font-size: 20px;
+}
+.search-space{
+    width: 300px;
+    height: 40px;
+    display: flex;
+    border-bottom: 1px solid var(--c);
+    background-color: var(--c);
+    justify-content: space-around;
+    align-items: center;
+}
+.search{
+    width: 260px;
+    height: 20px;
+    display: flex;
+    border-radius: 40px;
+    align-items: center;
+}
+.in::placeholder{
+    text-align: right;
+    font-family: "Lucida Console", Courier, monospace;
+    word-spacing: -3px;
+    letter-spacing: -0.55px;
+}
+.search > i{
+    color: #777;
+}
+.search > input{
+    border: none;
+    outline: none;
+    width: 240px;
+    height: 40px;
+    background-color: var(--c);
+    padding-left: 15px;
+}
+.bottom{
+    width: 98%;
+    height: 40px;
+    display: flex;
+    border-radius: 40px;
+    position: relative;
+    top: 520px;
+    left: 10px;
+    background-color: #eaeaea;
+    align-items: center;
+    padding-left: 5px;
+}
+.bottom > input{
+    position: relative;
+    left: 61px;
+    border: none;
+    outline: none;
+    width: 85%;
+    height: 100%;
+    padding-left: 25px;
+    background-color: var(--c);
+}
+.bottom > button> i{
+    position: relative;
+    z-index: 2;
+    height: 100%;
+    border-radius: 40px;
+    right: -80px;
+    font-size: 23px;
+    cursor: pointer;
+}
+.message::placeholder{
+    padding-left:25px;
+    text-align: left;
+    font-family: "Lucida Console", Courier, monospace;
+    word-spacing: -3px;
+    letter-spacing: -0.55px;
+}
+.message-box {
+    margin-top: 10px;
+}
+
+.others-message-box{
+
+}
+
+.my-message-box {
+    text-align: right;
+    background: white;
+}
+
+.message {
+    border-radius: 5%;
+    padding: 5px;
+    background-color: #19042b ;
+}
+
+.my-message {
+    float: right;
+    background: rgb(138 6 79);
+    color: rgb(10, 10, 10);
+}
+
+.others-message {
+    float: left;
+    background: white;
+}
+
+.separator {
+    width: 100%;
+    height: 8px;
+    float: left;
+}
